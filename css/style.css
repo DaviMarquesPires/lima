@@ -1,34 +1,64 @@
-* {
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    color: #921dff;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 20px;
+    font-size: 16px;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: #7600e4;
+}
+p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.lorem{
+    color: #b800e1;
+}
+p.lorem{
+    text-align: justify;
+}
+p.lorem#uParagrafo{
+    color: #77108e;
+    font-size: 18px;
+}
+.conteudo{
+    width: 60vw;
+    height: 100vh;
+}
+.botao{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
-.card-container{
+#button{
+    color: aliceblue;
+    background-color: #690acf;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+#button:hover{
+    transform: scale(1.1);
+}
+.img{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
-
-.card{
-    background-color: aliceblue;
-    width: 300px;
-    padding: 20px;
-    border-radius: ;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0,0.1)
-    trasition: transform 0.3s ease, box-shadow 0.3s ease;
+#imagem{
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 400px;
+    height: 320px;
 }
-
-.card-container{
-    transform: translateY(-10px)
-    box-shadow: 0px 6px 20px rgba(0, 0, 0,0.15)
+#imagem:hover{
+    transform: scale(1.05); 
+    opacity: 0.8;
 }

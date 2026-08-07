@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo de CSS</title>
-    <link rel="stylesheet" href="./estilo.css" as="style" onload="this.rel='stylesheet'">
+    <title>Estudo de Css</title>
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
     <style>
-        body {
+        body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-            margin: 0;
-            padding: 20px;
+            background-color: aliceblue;
+            margin: 0px;
+            padding: 6px;
         }
-
         h1{
-            color: blue;
+            color: #5900ad;
+            font-size: 30px;
         }
-
         p{
-            color: blue;
-            line-height: 1.6;
+            color: blueviolet;
+            line-height:  1.6;
+            font-size: 22px;
         }
     </style>
 </head>
 <body>
-    <h1>Bem vindo ao Estilo Interno</h1>    
-
-    <p>Este paragrafo utiliza estilos definidos na tag &lt;style&gt;</p>
-    <p> Texto estilizado</p>
-    <button type="button" id="Clique aqui"></button>
-
-
-    <div>
-
-    <h1 class="lorem">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde sequi modi corporis totam error minima? Quas fugit aut amet nihil eius ipsum, fugiat voluptatum ipsam eaque dolorum veniam inventore?</h1>
-
-    <p>  
-        <h1 class="ultimo paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit architecto rem ut. Consectetur, voluptatem debitis, officia iure tenetur ab unde aspernatur praesentium itaque at neque, deserunt adipisci ipsum suscipit repudiandae.</h1>
-
-    </p>
-      </div>
-
-
-    
+    <h1>Bem Vindo ao Estilo Interno</h1>
+    <p >Este paragráfo utiliza estilos definidos na tag &lt;style&gt;.</p>
+    <p>Este é um paragráfo adicional.</p>
+    <div class="botao">
+        <button type="button" id="button">Clique Aqui!</button>
+    </div>
+    <div class="img">
+        <img id="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQONfI3uSIpxVp-yzp1GcVJaJwsP_wB6KSNsZdp1yBCXOlQWiu2C691HxOEcgngmouTQVz9wlk7eDAMG25VDXO_1Y4cBGytBiBQTVNw_peWPw&s=10">
+    </div>
+    <div class="conteudo">  
+        <h1 class="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eius.
+        </h1>
+        <p class="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dolorum adipisci.Consectetur hic, nam sint facilis ex tempore eius! Cum!
+        </p>
+        <p class="lorem">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat itaque obcaecati quia delectus. Assumenda incidunt dolor fugit beatae, voluptate eius culpa delectus nemo molestiae officia quae amet voluptatum quo quod, consequuntur distinctio laudantium impedit modi architecto eos iure a fugiat excepturi. Doloribus ab quia ut aperiam excepturi minus praesentium perspiciatis eaque, quod dolorum, perferendis qui rerum aliquid illum? Laboriosam ad dolor amet ratione vero dolores quis sequi, reprehenderit laborum iste exercitationem consectetur temporibus modi, nisi dicta repudiandae commodi facilis recusandae ab praesentium voluptate officia minima? A, veritatis laudantium animi labore amet facilis consectetur aliquam consequatur aperiam distinctio itaque quia recusandae.
+        </p>
+        <p class="lorem" id="uParagrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae officiis iure nam, in id. Ipsum maiores excepturi ea quo, consectetur minima omnis minus eum delectus cupiditate dignissimos blanditiis reiciendis dicta nisi nulla totam debitis aliquam dolorum tempore repudiandae. Libero beatae a provident suscipit? Incidunt impedit veritatis, sunt expedita voluptate ducimus? Consectetur explicabo magni dicta, pariatur sapiente beatae ratione quo nihil alias voluptas obcaecati rem ut porro dignissimos nostrum voluptates quibusdam commodi iure unde. Quis aspernatur incidunt quo nostrum quaerat molestias, sunt impedit culpa repudiandae at in possimus iste consequatur maiores tempora esse voluptates voluptas, dolorem laudantium! Consequuntur, officiis natus.
+        </p>
+        <!--Estilização em Linha-->
+        <p style="color: blueviolet; font-size: 22px;">
+            Este texto está estilizado em linha
+        </p>
+    </div>
 </body>
 </html>
