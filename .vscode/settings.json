@@ -1,4 +1,6 @@
 {
-    "ridiculousCoding.shakeAmplitude": 6,
-    "ridiculousCoding.combo.ttl.newlineMs": 350
+    "ridiculousCoding.shakeAmplitude": 10,
+    "ridiculousCoding.combo.ttl.newlineMs": 350,
+    "ridiculousCoding.combo.anim.floatEm": 1000,
+    "ridiculousCoding.combo.anim.scaleAdd": 60
 }
