@@ -1,27 +1,27 @@
-document.addEventListener("DOMContentLoaded", listerner = () => {
-    const prevButton = document.querySelector(".carousel-btn prev")
-    const nextButton = document.querySelector(".carousel-btn next")
+document.addEventListener("DOMContentLoaded", listener = () => {
+    const prevButton = document.querySelector(".carousel-btn.prev")
+    const nextButton = document.querySelector(".carousel-btn.next")
     const carouselContainer = document.querySelector(".carousel-container");
-    const carouselItem = document.querySelectorAll(".carousel-item");
-    const totalItem = carouselItem.length;
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const totalItems = carouselItems.length;
     let currentIndex = 0;
 
-    const changes = () => {
-        carouselContainer.Style.transform = `translateX(-${currentIndex * 100}%)`;
+    const changeSlide = () => {
+        carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
     const nextSlide = () => {
-        currentIndex = (currentIndex + 1) % totalItem;
+        currentIndex = (currentIndex + 1) % totalItems;
         changeSlide();
     }
-    const prevSlide = () =>{
-        currentIndex = (currentIndex -1);
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
         changeSlide();
     }
-    nextButton.addEventListener("click", nextSlide)
-    prevButtonButton.addEventListener("click", prevButton)
+    nextButton.addEventListener("click", nextSlide);
+    prevButton.addEventListener("click", prevSlide);
 
     setInterval(nextSlide, 7000);
 
     changeSlide();
     
-} )
+})
